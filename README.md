@@ -40,9 +40,9 @@ As a short form it is possible to just specify `%generate` as secret value, in w
 
 |Flag                         |Optional|Default|Description                                                 |
 |-----------------------------|--------|-------|------------------------------------------------------------|
-|-bind-address string         |yes     |:2443  |Webhook bind address                                        |
-|-tls-key-file                |no      |-      |File containing the TLS private key used for SSL termination|
-|-tls-cert-file               |no      |-      |File containing the TLS certificate matching the private key|
+|--bind-address string         |yes     |:2443  |Webhook bind address                                        |
+|--tls-key-file                |no      |-      |File containing the TLS private key used for SSL termination|
+|--tls-cert-file               |no      |-      |File containing the TLS certificate matching the private key|
 
 **References**
 
