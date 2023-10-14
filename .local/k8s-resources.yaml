@@ -1,0 +1,85 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: secret-generator-webhook
+  namespace: default
+spec:
+  ports:
+  - port: 443
+    protocol: TCP
+    targetPort: 2443
+---
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: secret-generator-webhook
+  namespace: default
+subsets:
+- addresses:
+  - ip: ${HOST_IP}
+  ports:
+  - port: 2443
+---
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  name: secret-generator-webhook
+  namespace: default
+spec:
+  selfSigned: {}
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: secret-generator-webhook
+  namespace: default
+spec:
+  dnsNames:
+  - secret-generator-webhook
+  - secret-generator-webhook.default
+  - secret-generator-webhook.default.svc
+  - secret-generator-webhook.default.svc.cluster.local
+  issuerRef:
+    name: secret-generator-webhook
+  secretName: secret-generator-webhook
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: secret-generator-webhook
+  annotations:
+    cert-manager.io/inject-ca-from: default/secret-generator-webhook
+webhooks:
+- admissionReviewVersions:
+  - v1
+  clientConfig:
+    service:
+      name: secret-generator-webhook
+      namespace: default
+      path: /core/v1/secret/mutate
+      port: 443
+  name: mutate.secrets.core.k8s.io
+  rules:
+  - apiGroups:
+    - ''
+    apiVersions:
+    - v1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - secrets
+    scope: Namespaced
+  objectSelector:
+    matchExpressions:
+    - key: secret-generator.cs.sap.com/enabled
+      operator: In
+      values:
+      - 'true'
+  namespaceSelector: 
+  matchPolicy: Equivalent
+  sideEffects: None
+  timeoutSeconds: 10
+  failurePolicy: Fail
+  reinvocationPolicy: Never
