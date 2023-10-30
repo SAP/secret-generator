@@ -25,6 +25,8 @@ github.com/fsnotify/fsnotify v1.6.0/go.mod h1:sl3t1tCWJFWoRz9R8WJCbQihKKwmorjAbS
 github.com/go-logr/logr v1.2.0/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
 github.com/go-logr/logr v1.2.4 h1:g01GSCwiDw2xSZfjJ2/T9M+S6pFdcNtFYsp+Y43HYDQ=
 github.com/go-logr/logr v1.2.4/go.mod h1:jdQByPbusPIv2/zmleS9BjJVeZ6kBagPoEUsqbVz/1A=
+github.com/go-logr/logr v1.3.0 h1:2y3SDp0ZXuc6/cjLSZ+Q3ir+QB9T/iG5yYRXqsagWSY=
+github.com/go-logr/logr v1.3.0/go.mod h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=
 github.com/go-logr/zapr v1.2.4 h1:QHVo+6stLbfJmYGkQ7uGHUCu5hnAFAj6mDe6Ea0SeOo=
 github.com/go-logr/zapr v1.2.4/go.mod h1:FyHWQIzQORZ0QVE1BtVHv3cKtNLuXsbNLtpuhNapBOA=
 github.com/go-openapi/jsonpointer v0.19.6 h1:eCs3fxoIi3Wh6vtgmLTOjdhSpiqphQ+DaPn38N2ZdrE=
@@ -119,6 +121,8 @@ github.com/sap/admission-webhook-runtime v0.1.6 h1:1tb9oyyRJFplYnBV7VFH9H1XqtmrO
 github.com/sap/admission-webhook-runtime v0.1.6/go.mod h1:4CI97F9WoYvj9xpKym52Q67bC655LXMNn1B6mBDGqKA=
 github.com/sap/admission-webhook-runtime v0.1.7 h1:rZkj5NGX/ysXGW4ZOgVKGCy8M4ZYr+B1jqvIPCawn1w=
 github.com/sap/admission-webhook-runtime v0.1.7/go.mod h1:FWp2xQHxzfpCVDxrg9TffzeraT4exhP3oCv1ln7fsN0=
+github.com/sap/admission-webhook-runtime v0.1.8 h1:W99nDuVy4S1skwJdEwsOJyO7uMkVKaoM+e7ibxHAaNI=
+github.com/sap/admission-webhook-runtime v0.1.8/go.mod h1:7FvjXBBwO9Qn6F/eeI6GaBYPygAFITzn6rD7EzL8EEA=
 github.com/sethvargo/go-password v0.2.0 h1:BTDl4CC/gjf/axHMaDQtw507ogrXLci6XRiLc7i/UHI=
 github.com/sethvargo/go-password v0.2.0/go.mod h1:Ym4Mr9JXLBycr02MFuVQ/0JHidNetSgbzutTr3zsYXE=
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
