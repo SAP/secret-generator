@@ -135,6 +135,8 @@ github.com/sap/admission-webhook-runtime v0.1.10 h1:6AsE1EW4ibDADRiC7fxh61Y4QXdV
 github.com/sap/admission-webhook-runtime v0.1.10/go.mod h1:KxPxEQ5yVkkDxxQRKSyzdFknUkZ0d3vn7qGv9haHqRA=
 github.com/sap/admission-webhook-runtime v0.1.11 h1:irhoZQeZMOo+3RJnFe0YuHtskBXd3uVyrz3rtcNP1dA=
 github.com/sap/admission-webhook-runtime v0.1.11/go.mod h1:vkBA12CGjoecG7gzBUpXiY4z0JsE7+d+gJykzzI+Oyc=
+github.com/sap/admission-webhook-runtime v0.1.12 h1:BnkgBQns+LIR4mQTdNB4+w1FZxL2pKyxUm0OxG4ooEs=
+github.com/sap/admission-webhook-runtime v0.1.12/go.mod h1:0mi+HkxjUZo+kSoLXAoZv50oyfi69om0Ouqfc+zfABg=
 github.com/sethvargo/go-password v0.2.0 h1:BTDl4CC/gjf/axHMaDQtw507ogrXLci6XRiLc7i/UHI=
 github.com/sethvargo/go-password v0.2.0/go.mod h1:Ym4Mr9JXLBycr02MFuVQ/0JHidNetSgbzutTr3zsYXE=
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
