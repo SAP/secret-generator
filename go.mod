@@ -7,7 +7,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.17.2
 	github.com/onsi/gomega v1.33.1
 	github.com/pkg/errors v0.9.1
-	github.com/sap/admission-webhook-runtime v0.1.27
+	github.com/sap/admission-webhook-runtime v0.1.28
 	github.com/sethvargo/go-password v0.3.0
 	github.com/spf13/pflag v1.0.5
 	k8s.io/api v0.30.0
