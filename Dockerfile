@@ -1,5 +1,5 @@
 ### build go executable
-FROM --platform=$BUILDPLATFORM golang:1.22.3 as build
+FROM --platform=$BUILDPLATFORM golang:1.22.4 as build
 ARG TARGETOS TARGETARCH
 
 WORKDIR /workspace
