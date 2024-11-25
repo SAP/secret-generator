@@ -5,7 +5,7 @@ go 1.23.3
 require (
 	github.com/google/uuid v1.6.0
 	github.com/onsi/ginkgo/v2 v2.22.0
-	github.com/onsi/gomega v1.35.1
+	github.com/onsi/gomega v1.36.0
 	github.com/pkg/errors v0.9.1
 	github.com/sap/admission-webhook-runtime v0.1.48
 	github.com/sethvargo/go-password v0.3.1
