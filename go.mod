@@ -4,7 +4,7 @@ go 1.23.4
 
 require (
 	github.com/google/uuid v1.6.0
-	github.com/onsi/ginkgo/v2 v2.22.1
+	github.com/onsi/ginkgo/v2 v2.22.2
 	github.com/onsi/gomega v1.36.2
 	github.com/pkg/errors v0.9.1
 	github.com/sap/admission-webhook-runtime v0.1.53
