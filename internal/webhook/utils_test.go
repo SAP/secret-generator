@@ -1,5 +1,5 @@
 /*
-SPDX-FileCopyrightText: 2024 SAP SE or an SAP affiliate company and secret-generator contributors
+SPDX-FileCopyrightText: 2025 SAP SE or an SAP affiliate company and secret-generator contributors
 SPDX-License-Identifier: Apache-2.0
 */
 
