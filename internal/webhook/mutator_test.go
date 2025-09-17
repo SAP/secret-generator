@@ -8,6 +8,7 @@ package webhook
 import (
 	"encoding/base32"
 	"encoding/base64"
+	"encoding/hex"
 	"regexp"
 	"testing"
 
@@ -226,6 +227,16 @@ func TestGenerateValue(t *testing.T) {
 		t.Errorf("generateValue: got invalid password (invalid base64 encoding): %s", v)
 	}
 
+	// password with hex encoding
+	v, err = generateValue("password:length=5;num_digits=0;num_symbols=5;symbols=_;encoding=hex")
+	if err != nil {
+		t.Fatalf("generateValue: got errror: %s", err)
+	}
+	if v != "5f5f5f5f5f" {
+		// 5f5f5f5f5f is hex of _____
+		t.Errorf("generateValue: got invalid password (invalid hex encoding): %s", v)
+	}
+
 	// uuid
 	v, err = generateValue("uuid")
 	if err != nil {
@@ -282,6 +293,16 @@ func TestGenerateValue(t *testing.T) {
 		t.Fatalf("generateValue: got errror: %s", err)
 	}
 	decodedUuidBytes, _ = base64.RawURLEncoding.DecodeString(v)
+	if _, err := uuid.FromBytes(decodedUuidBytes); err != nil {
+		t.Errorf("generateValue: got invalid uuid; error: %s", err)
+	}
+
+	// uuid encoding hex
+	v, err = generateValue("uuid:encoding=hex")
+	if err != nil {
+		t.Fatalf("generateValue: got errror: %s", err)
+	}
+	decodedUuidBytes, _ = hex.DecodeString(v)
 	if _, err := uuid.FromBytes(decodedUuidBytes); err != nil {
 		t.Errorf("generateValue: got invalid uuid; error: %s", err)
 	}
