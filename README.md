@@ -26,13 +26,13 @@ By default - when using the [Helm chart](https://github.com/sap/secret-generator
 Then, secret values of the form `%generate:<type>[:<arg=value>;<arg=value>;...]` will be replaced accordingly.
 Currently, two generator types are supported: `uuid` and `password`:
 - `uuid` will generate a [RFC4122](https://datatracker.ietf.org/doc/html/rfc4122) UUIDv4 and allows the following arguments:
-  - `encoding=<base32|base64|base64_url|base64_raw|base64_raw_url>`: encoding to be applied to the generated uuid (note: use raw for no padding)
+  - `encoding=<base32|base64|base64_url|base64_raw|base64_raw_url|hex>`: encoding to be applied to the generated uuid (note: use raw for no padding)
 - `password` allows the following arguments:
   - `length=<1-99>`: length of the generated password (default 32)
   - `num_digits=<0-99>`: number of digits (0-9) in the generated password (default length/4)
   - `num_symbols=<0-99>`: number of symbols in the generated pasasword (default length/4)
   - `symbols=<chars>`: symbols (i.e. non-alphanumerics) to be used in the generated password (default: `~!@#$%^&*()_+-={}|:<>?,./`)
-  - `encoding=<base32|base64|base64_url|base64_raw|base64_raw_url>`: encoding to be applied to the generated password (note: the actual length will be larger than specified by length then).
+  - `encoding=<base32|base64|base64_url|base64_raw|base64_raw_url|hex>`: encoding to be applied to the generated password (note: the actual length will be larger than specified by length then).
 
 As a short form it is possible to just specify `%generate` as secret value, in which case a (32 character) password will be generated.
 
