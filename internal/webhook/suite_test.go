@@ -10,6 +10,7 @@ import (
 	"crypto/tls"
 	"encoding/base32"
 	"encoding/base64"
+	"encoding/hex"
 	"fmt"
 	"maps"
 	"net"
@@ -214,6 +215,16 @@ var _ = Describe("Create secrets", func() {
 		Expect(secret.Data).To(HaveKey("base64RawUrlPasswordKey"))
 		Expect(secret.Data["base64RawUrlPasswordKey"]).NotTo(BeEmpty())
 		_, err = base64.RawURLEncoding.DecodeString(string(secret.Data["base64RawUrlPasswordKey"]))
+		Expect(err).NotTo(HaveOccurred())
+
+		Expect(secret.Data).To(HaveKey("hexUuidKey"))
+		Expect(secret.Data["hexUuidKey"]).NotTo(BeEmpty())
+		_, err = hex.DecodeString(string(secret.Data["hexUuidKey"]))
+		Expect(err).NotTo(HaveOccurred())
+
+		Expect(secret.Data).To(HaveKey("hexPasswordKey"))
+		Expect(secret.Data["hexPasswordKey"]).NotTo(BeEmpty())
+		_, err = hex.DecodeString(string(secret.Data["hexPasswordKey"]))
 		Expect(err).NotTo(HaveOccurred())
 	})
 })
