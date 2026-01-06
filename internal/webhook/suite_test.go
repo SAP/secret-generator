@@ -142,6 +142,7 @@ var _ = Describe("Create secrets", func() {
 				"base64UrlUuidKey":        "%generate:uuid:encoding=base64_url",
 				"base64RawUuidKey":        "%generate:uuid:encoding=base64_raw",
 				"base64RawUrlUuidKey":     "%generate:uuid:encoding=base64_raw_url",
+				"hexUuidKey":              "%generate:uuid:encoding=hex",
 				"simplePasswordKey":       "%generate:password",
 				"complexPasswordKey":      "%generate:password:length=10;num_digits=1;num_symbols=1;symbols=_",
 				"base32PasswordKey":       "%generate:password:length=100;encoding=base32",
@@ -149,6 +150,7 @@ var _ = Describe("Create secrets", func() {
 				"base64UrlPasswordKey":    "%generate:password:length=100;encoding=base64_url",
 				"base64RawPasswordKey":    "%generate:password:length=100;encoding=base64_raw",
 				"base64RawUrlPasswordKey": "%generate:password:length=100;encoding=base64_raw_url",
+				"hexPasswordKey":          "%generate:password:length=100;encoding=hex",
 			},
 		}
 
@@ -186,6 +188,11 @@ var _ = Describe("Create secrets", func() {
 		_, err = base64.RawURLEncoding.DecodeString(string(secret.Data["base64RawUrlUuidKey"]))
 		Expect(err).NotTo(HaveOccurred())
 
+		Expect(secret.Data).To(HaveKey("hexUuidKey"))
+		Expect(secret.Data["hexUuidKey"]).NotTo(BeEmpty())
+		_, err = hex.DecodeString(string(secret.Data["hexUuidKey"]))
+		Expect(err).NotTo(HaveOccurred())
+
 		Expect(secret.Data).To(HaveKey("simplePasswordKey"))
 		Expect(secret.Data["simplePasswordKey"]).To(HaveLen(32))
 
@@ -215,11 +222,6 @@ var _ = Describe("Create secrets", func() {
 		Expect(secret.Data).To(HaveKey("base64RawUrlPasswordKey"))
 		Expect(secret.Data["base64RawUrlPasswordKey"]).NotTo(BeEmpty())
 		_, err = base64.RawURLEncoding.DecodeString(string(secret.Data["base64RawUrlPasswordKey"]))
-		Expect(err).NotTo(HaveOccurred())
-
-		Expect(secret.Data).To(HaveKey("hexUuidKey"))
-		Expect(secret.Data["hexUuidKey"]).NotTo(BeEmpty())
-		_, err = hex.DecodeString(string(secret.Data["hexUuidKey"]))
 		Expect(err).NotTo(HaveOccurred())
 
 		Expect(secret.Data).To(HaveKey("hexPasswordKey"))
