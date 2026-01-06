@@ -8,6 +8,7 @@ package webhook
 import (
 	"encoding/base32"
 	"encoding/base64"
+	"encoding/hex"
 	"fmt"
 	"regexp"
 	"strconv"
@@ -161,6 +162,8 @@ func encode(encoding string, value []byte) (string, error) {
 		encodedValue = base64.RawStdEncoding.EncodeToString(value)
 	case "base64_raw_url":
 		encodedValue = base64.RawURLEncoding.EncodeToString(value)
+	case "hex":
+		encodedValue = hex.EncodeToString(value)
 	default:
 		err = fmt.Errorf("unsupported encoding %s", encoding)
 	}
