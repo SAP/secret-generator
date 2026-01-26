@@ -97,6 +97,8 @@ github.com/rogpeppe/go-internal v1.14.1 h1:UQB4HGPB6osV0SQTLymcB4TgvyWu6ZyliaW0t
 github.com/rogpeppe/go-internal v1.14.1/go.mod h1:MaRKkUm5W0goXpeCfT7UZI6fk/L7L7so1lCWt35ZSgc=
 github.com/sap/admission-webhook-runtime v0.1.82 h1:5R5BmAhGf7KMwvE/RSWx0r3LiIJCTP3b80qXWfh4cHU=
 github.com/sap/admission-webhook-runtime v0.1.82/go.mod h1:0qk5ZfYk/bmfHhS49Dwz9H/rk46eARKllns5WHTRIqM=
+github.com/sap/admission-webhook-runtime v0.1.83 h1:lZItvlPV18yOdtbjX09yN9TC7uEp/hbyrKB8BjPl7sg=
+github.com/sap/admission-webhook-runtime v0.1.83/go.mod h1:J3fzrIzgTGyfVi8lZUCVKtaPAXbolDxPT6ydR11Ee3k=
 github.com/sethvargo/go-password v0.3.1 h1:WqrLTjo7X6AcVYfC6R7GtSyuUQR9hGyAj/f1PYQZCJU=
 github.com/sethvargo/go-password v0.3.1/go.mod h1:rXofC1zT54N7R8K/h1WDUdkf9BOx5OptoxrMBcrXzvs=
 github.com/spf13/afero v1.12.0 h1:UcOPyRBYczmFn6yvphxkn9ZEOY65cpwGKb5mL36mrqs=
