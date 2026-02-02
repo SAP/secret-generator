@@ -107,6 +107,8 @@ github.com/sap/admission-webhook-runtime v0.1.82 h1:5R5BmAhGf7KMwvE/RSWx0r3LiIJC
 github.com/sap/admission-webhook-runtime v0.1.82/go.mod h1:0qk5ZfYk/bmfHhS49Dwz9H/rk46eARKllns5WHTRIqM=
 github.com/sap/admission-webhook-runtime v0.1.83 h1:lZItvlPV18yOdtbjX09yN9TC7uEp/hbyrKB8BjPl7sg=
 github.com/sap/admission-webhook-runtime v0.1.83/go.mod h1:J3fzrIzgTGyfVi8lZUCVKtaPAXbolDxPT6ydR11Ee3k=
+github.com/sap/admission-webhook-runtime v0.1.84 h1:VCfpFwdsmK/jNx55fO2AL3q5FlcTyVEez26D6cQRf88=
+github.com/sap/admission-webhook-runtime v0.1.84/go.mod h1:hd2wWgHAuT9cqSmdxqSfjfERKbiSP5T2DQUZYdeKARA=
 github.com/sethvargo/go-password v0.3.1 h1:WqrLTjo7X6AcVYfC6R7GtSyuUQR9hGyAj/f1PYQZCJU=
 github.com/sethvargo/go-password v0.3.1/go.mod h1:rXofC1zT54N7R8K/h1WDUdkf9BOx5OptoxrMBcrXzvs=
 github.com/spf13/afero v1.12.0 h1:UcOPyRBYczmFn6yvphxkn9ZEOY65cpwGKb5mL36mrqs=
@@ -213,6 +215,7 @@ sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260120065648-aebc15d
 sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260125161707-82cc073adb06/go.mod h1:/BwOHkjE31BJ0eqwWNH+XizfhDZv+GqzOGcJFN9iWvw=
 sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260126224948-cf2e741fe0fd/go.mod h1:/BwOHkjE31BJ0eqwWNH+XizfhDZv+GqzOGcJFN9iWvw=
 sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260131020224-aba4afecb038/go.mod h1:/BwOHkjE31BJ0eqwWNH+XizfhDZv+GqzOGcJFN9iWvw=
+sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260202103230-8ebd0ffa23d3/go.mod h1:/BwOHkjE31BJ0eqwWNH+XizfhDZv+GqzOGcJFN9iWvw=
 sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 h1:IpInykpT6ceI+QxKBbEflcR5EXP7sU1kvOlxwZh5txg=
 sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730/go.mod h1:mdzfpAEoE6DHQEN0uh9ZbOCuHbLK5wOm7dK4ctXE9Tg=
 sigs.k8s.io/randfill v1.0.0 h1:JfjMILfT8A6RbawdsK2JXGBR5AQVfd+9TbzrlneTyrU=

@@ -7,7 +7,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.28.1
 	github.com/onsi/gomega v1.39.1
 	github.com/pkg/errors v0.9.1
-	github.com/sap/admission-webhook-runtime v0.1.83
+	github.com/sap/admission-webhook-runtime v0.1.84
 	github.com/sethvargo/go-password v0.3.1
 	github.com/spf13/pflag v1.0.10
 	k8s.io/api v0.35.0
@@ -15,7 +15,7 @@ require (
 	k8s.io/client-go v0.35.0
 	k8s.io/klog/v2 v2.130.1
 	sigs.k8s.io/controller-runtime v0.23.1
-	sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260131020224-aba4afecb038
+	sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260202103230-8ebd0ffa23d3
 )
 
 require (
