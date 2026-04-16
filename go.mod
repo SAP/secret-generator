@@ -10,9 +10,9 @@ require (
 	github.com/sap/admission-webhook-runtime v0.1.91
 	github.com/sethvargo/go-password v0.3.1
 	github.com/spf13/pflag v1.0.10
-	k8s.io/api v0.35.3
+	k8s.io/api v0.35.4
 	k8s.io/apimachinery v0.36.0-rc.1
-	k8s.io/client-go v0.35.3
+	k8s.io/client-go v0.35.4
 	k8s.io/klog/v2 v2.140.0
 	sigs.k8s.io/controller-runtime v0.23.3
 	sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20260405152528-6210f847b2c1
