@@ -85,6 +85,7 @@ jobs:
   update-chart:
     name: Update Helm chart
     runs-on: ubuntu-24.04
+    environment: release
     needs: [publish-docker]
 
     steps:
