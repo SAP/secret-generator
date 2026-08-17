@@ -96,8 +96,8 @@ github.com/prometheus/procfs v0.19.2 h1:zUMhqEW66Ex7OXIiDkll3tl9a1ZdilUOd/F6ZXw4
 github.com/prometheus/procfs v0.19.2/go.mod h1:M0aotyiemPhBCM0z5w87kL22CxfcH05ZpYlu+b4J7mw=
 github.com/rogpeppe/go-internal v1.14.1 h1:UQB4HGPB6osV0SQTLymcB4TgvyWu6ZyliaW0tI/otEQ=
 github.com/rogpeppe/go-internal v1.14.1/go.mod h1:MaRKkUm5W0goXpeCfT7UZI6fk/L7L7so1lCWt35ZSgc=
-github.com/sap/admission-webhook-runtime v0.1.104 h1:rMAlC0VMQtpJIGkIoDxz2SAZ7gYeu+m0Fsjk1Vo0Z2Q=
-github.com/sap/admission-webhook-runtime v0.1.104/go.mod h1:gnpIDb8Z9dLAdo0oo34Jc/PZdAc7d7k8dyP04a2/kTM=
+github.com/sap/admission-webhook-runtime v0.1.105 h1:Md4d8mGOWs0B7+rioeH2S3kPNzS8qmbsI2Vj/2V9Jv0=
+github.com/sap/admission-webhook-runtime v0.1.105/go.mod h1:dfXwUA6D2NYibPfJFtkTjM+4A2HAn385tBzTyxaTBEk=
 github.com/sethvargo/go-password v0.4.0 h1:eSidVKQw5C7CmTDAtH3RipBTSjdU1ZRxQaynD2GWLVU=
 github.com/sethvargo/go-password v0.4.0/go.mod h1:PO3nYHwUpcHPR0F9woy7a4abZPvzRuqJr0GaeIYTm3k=
 github.com/spf13/afero v1.12.0 h1:UcOPyRBYczmFn6yvphxkn9ZEOY65cpwGKb5mL36mrqs=
