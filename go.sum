@@ -114,8 +114,8 @@ github.com/prometheus/procfs v0.21.1 h1:GljZCt+zSTS+NZq88cyQ1LjZ+RCHp3uVuabBWA5+
 github.com/prometheus/procfs v0.21.1/go.mod h1:aB55Cww9pdSJVHk0hUf0inxWyyjPogFIjmHKYgMKmtY=
 github.com/rogpeppe/go-internal v1.14.1 h1:UQB4HGPB6osV0SQTLymcB4TgvyWu6ZyliaW0tI/otEQ=
 github.com/rogpeppe/go-internal v1.14.1/go.mod h1:MaRKkUm5W0goXpeCfT7UZI6fk/L7L7so1lCWt35ZSgc=
-github.com/sap/admission-webhook-runtime v0.1.116 h1:KPbYwcbDoZwy96aeaeA6huZ6agEkih4m+0ucYWopTek=
-github.com/sap/admission-webhook-runtime v0.1.116/go.mod h1:5p/sas6p6CAflhY8KyyoY3XZ+rggky8cdK3lhsHxYg4=
+github.com/sap/admission-webhook-runtime v0.1.117 h1:zX+1vUcpDR3yi31YGFP/aWHBkqx6QQ/RdwrNGglO/1w=
+github.com/sap/admission-webhook-runtime v0.1.117/go.mod h1:aoVhTg/U/d+5oJxUZCVln76JDg4o9mQnz5XGI+qSj+8=
 github.com/sethvargo/go-password v0.4.0 h1:eSidVKQw5C7CmTDAtH3RipBTSjdU1ZRxQaynD2GWLVU=
 github.com/sethvargo/go-password v0.4.0/go.mod h1:PO3nYHwUpcHPR0F9woy7a4abZPvzRuqJr0GaeIYTm3k=
 github.com/spf13/afero v1.12.0 h1:UcOPyRBYczmFn6yvphxkn9ZEOY65cpwGKb5mL36mrqs=
@@ -190,10 +190,10 @@ k8s.io/kube-openapi v0.0.0-20260721132016-d427ff9ee9ad h1:oXImqH8mQNk7PmvzKhmN3d
 k8s.io/kube-openapi v0.0.0-20260721132016-d427ff9ee9ad/go.mod h1:0/mqHCVhlumdJ3BhCfnjSZQE037nAhNodh1/hK0T8/I=
 k8s.io/utils v0.0.0-20260626114624-be93311217bd h1:Ea7fgQ5we8Y9T0OX5o0dAHzQOBRI07D/dEYRaB9ZZEs=
 k8s.io/utils v0.0.0-20260626114624-be93311217bd/go.mod h1:xDxuJ0whA3d0I4mf/C4ppKHxXynQ+fxnkmQH0vTHnuk=
-sigs.k8s.io/controller-runtime v0.25.2 h1:bEkK3PVOIVK9X8QWLGVhJgmFc++47vfT6wakSzAOLsQ=
-sigs.k8s.io/controller-runtime v0.25.2/go.mod h1:4QqLdT6z/L6Olj8JJCtvztid4/fnIiYsfaTFScegctc=
-sigs.k8s.io/controller-runtime/tools/setup-envtest v0.25.2 h1:53Y05LgEZ7qAr1bsdNTIcwgzEHQzHYUZkCDa3TqLdVg=
-sigs.k8s.io/controller-runtime/tools/setup-envtest v0.25.2/go.mod h1:q4i4kLTq6J6o29RUAQieHH8LS5knNkpgalnBhvrLp/8=
+sigs.k8s.io/controller-runtime v0.25.3 h1:b4OcZSY/aKHY8JG+rBlQmQ1xLs574+ZBEjv1dtfLd80=
+sigs.k8s.io/controller-runtime v0.25.3/go.mod h1:4QqLdT6z/L6Olj8JJCtvztid4/fnIiYsfaTFScegctc=
+sigs.k8s.io/controller-runtime/tools/setup-envtest v0.25.3 h1:6SzrgDmf8YueQ3IbX2cNQsg2Jkmy8FzP9dwWYYE7Vb8=
+sigs.k8s.io/controller-runtime/tools/setup-envtest v0.25.3/go.mod h1:q4i4kLTq6J6o29RUAQieHH8LS5knNkpgalnBhvrLp/8=
 sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730 h1:IpInykpT6ceI+QxKBbEflcR5EXP7sU1kvOlxwZh5txg=
 sigs.k8s.io/json v0.0.0-20250730193827-2d320260d730/go.mod h1:mdzfpAEoE6DHQEN0uh9ZbOCuHbLK5wOm7dK4ctXE9Tg=
 sigs.k8s.io/randfill v1.0.0 h1:JfjMILfT8A6RbawdsK2JXGBR5AQVfd+9TbzrlneTyrU=
